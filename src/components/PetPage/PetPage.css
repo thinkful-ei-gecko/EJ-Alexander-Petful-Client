@@ -1,0 +1,73 @@
+.petPage {
+    min-height: 90vh;
+}
+
+.petPage > button {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 100px;
+    height: 40px;
+    background-color: #78d8c2;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.petPage > button:hover {
+    cursor: pointer;
+    background-color: #a4dacd;
+}
+
+.petDesc {
+    margin-top: 100px;
+    padding: 20px;
+    display: flex; 
+    flex-direction: row;
+    width: 70%;
+    height: 600px;
+    background-color: darkcyan;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.petDesc img {
+    width: 25%;
+}
+
+.innerPetDesc {
+    width: 75%;
+    position: relative;
+}
+
+.innerPetDesc h2 {
+    text-align: center;
+    font-size: 70px;
+    padding: 20px;
+}
+
+.innerPetDesc p {
+    font-size: 30px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.innerPetDesc button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ecf4be;
+    border: none;
+    border-radius: 5px;
+}
+
+.innerPetDesc button:hover {
+    cursor: pointer;
+    background-color: #ebf6a8;
+}

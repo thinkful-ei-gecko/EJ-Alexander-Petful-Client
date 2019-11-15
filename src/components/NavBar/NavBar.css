@@ -1,0 +1,28 @@
+.Navbar {
+    width: 100%;
+    padding: 0;
+    color: black;
+    height: 50px;
+}
+
+.Navbar ul {
+    margin-right: 75px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Navbar li {
+    padding: 15px 20px 15px 20px;
+}
+
+.Navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.Navbar a:visited {
+    color: black;
+    text-decoration: none;
+}

@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route, Router} from 'react-router-dom';
+import Home from './components/Home/Home.js'
+import Adopt from './components/Adopt/Adopt.js'
+import Help from './components/Help/Help.js'
+import NavBar from './components/NavBar/NavBar.js'
+import PetPage from './components/PetPage/PetPage'
+import history from './history'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Router history={history}>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/adopt' component={Adopt} />
+        <Route exact path='/help' component={Help} />
+        <Route exact path='/adopt/:id' component={PetPage} />
+      </Router>
     </div>
   );
 }
 
 export default App;
+

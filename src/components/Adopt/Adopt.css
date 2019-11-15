@@ -1,0 +1,133 @@
+.adopt {
+    min-height: 105vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.generalQue a, .dogQue a, .catQue a {
+    text-decoration: none;
+    color: black
+}
+
+.generalQue a:visited, .dogQue a:visited, .catQue a:visited {
+    text-decoration: none;
+    color: black
+}
+
+/* PEOPLE QUEUE SECTION */
+
+.peopleQue {
+    width: 20%;
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+}
+
+.peopleQue h2 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.peopleQue ul {
+    list-style-type: none;
+}
+
+.peopleQue li {
+    padding: 10px;
+}
+
+/* ANIMAL QUEUE SECTION */
+
+.animalQue {
+    width: 80%;
+}
+
+.animalQue h2 {
+    text-align: center;
+    font-size: 75px;
+}
+
+/* GENERAL SECTION */
+
+.generalQue {
+    padding: 20px;
+}
+
+.generalQue > p, .dogQue > p, .catQue > p {
+    font-size: 32px;
+    padding: 20px;
+}
+
+.generalQue ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.generalQue li {
+    margin-right: 75px;
+}
+
+/* DOG SECTION */
+
+.dogQue {
+    padding: 20px;
+}
+
+.dogQue ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.dogQue li {
+    margin-right: 75px;
+}
+
+/* CAT SECTION */
+
+.catQue {
+    padding: 20px;
+}
+
+.catQue ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.catQue li {
+    margin-right: 75px;
+}
+
+/* ANIMAL CARD */
+
+.animalCard {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.animalCard h2 {
+    font-size: 25px;
+    font-weight: 400;
+    padding: 20px 20px 15px 20px;
+}
+
+.animalCard p {
+    padding: 5px;
+}
+
+.animalCard img {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}

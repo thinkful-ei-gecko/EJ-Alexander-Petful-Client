@@ -1,0 +1,51 @@
+.Home {
+    text-align: center;
+    padding: 20px;
+}
+
+.Home h1 {
+    font-size: 70px;
+    padding: 10px;
+}
+
+.Home img {
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.getStarted {
+    padding: 50px 100px 100px 100px;
+    /* background-color: blueviolet; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.getStarted h2 {
+    font-size: 40px;
+    padding: 10px 10px 20px 10px;
+}
+
+.Home p {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Home a {
+    text-decoration: none;
+    color: white;
+    /* padding: 15px 10px; */
+    background-color: #7573b6;
+    padding: 14px 20px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.Home a:visited {
+    text-decoration: none;
+    color: white;
+}
