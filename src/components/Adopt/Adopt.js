@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import './Adopt.css'
+import NavBar from '../NavBar/NavBar'
 
 export default class Adopt extends Component {
 
@@ -25,21 +26,40 @@ export default class Adopt extends Component {
 
     render(){
         return(
-            <div className='adopt'>
+            <div>
 
-                <div className='peopleQue'>
-                    <h2>Queue</h2>
-                    <ul>
-                        {this.state.people.map(person => <li>Name: {person}</li>)}
-                    </ul>
-                </div>
+                <NavBar />
 
-                <div className='animalQue'>
-                    <h2>Adopt</h2>
-                    <div className='generalQue'>
-                    <p>General</p>
-                    <ul>
-                        {this.state.general.map(animal => 
+                <div className='adopt'>
+                    <div className='peopleQue'>
+                        <h2>Queue</h2>
+                        <ul>
+                            {this.state.people.map(person => <li>Name: {person}</li>)}
+                        </ul>
+                    </div>
+
+                    <div className='animalQue'>
+                        <h2>Adopt</h2>
+                        <div className='generalQue'>
+                        <p>General</p>
+                        <ul>
+                            {this.state.general.map(animal => 
+                                    <li className='animalCard'>
+                                        <Link to={`/adopt/` + animal.id}>
+                                            <h2>{animal.name}</h2>
+                                            <p><img alt={animal.story} src={animal.imageUrl}></img></p>
+                                            <p>{animal.gender}</p>
+                                            <p>Age: {animal.age}</p>
+                                        </Link>
+                                    </li>
+                                )}
+                        </ul>
+                        </div>
+
+                        <div className='dogQue'>
+                        <p>Dogs</p>
+                        <ul>
+                            {this.state.dogs.map(animal => 
                                 <li className='animalCard'>
                                     <Link to={`/adopt/` + animal.id}>
                                         <h2>{animal.name}</h2>
@@ -49,43 +69,26 @@ export default class Adopt extends Component {
                                     </Link>
                                 </li>
                             )}
-                    </ul>
-                    </div>
+                        </ul>
+                        </div>
 
-                    <div className='dogQue'>
-                    <p>Dogs</p>
-                    <ul>
-                        {this.state.dogs.map(animal => 
-                            <li className='animalCard'>
-                                <Link to={`/adopt/` + animal.id}>
-                                    <h2>{animal.name}</h2>
-                                    <p><img alt={animal.story} src={animal.imageUrl}></img></p>
-                                    <p>{animal.gender}</p>
-                                    <p>Age: {animal.age}</p>
-                                </Link>
-                            </li>
-                        )}
-                    </ul>
-                    </div>
-
-                    <div className='catQue'>
-                    <p>Cats</p>
-                    <ul>
-                        {this.state.cats.map(animal => 
-                            <li className='animalCard'>
-                                <Link to={`/adopt/` + animal.id}>
-                                    <h2>{animal.name}</h2>
-                                    <p><img alt={animal.story} src={animal.imageUrl}></img></p>
-                                    <p>{animal.gender}</p>
-                                    <p>Age: {animal.age}</p>
-                                </Link>
-                            </li>
-                        )}
-                    </ul>
+                        <div className='catQue'>
+                        <p>Cats</p>
+                        <ul>
+                            {this.state.cats.map(animal => 
+                                <li className='animalCard'>
+                                    <Link to={`/adopt/` + animal.id}>
+                                        <h2>{animal.name}</h2>
+                                        <p><img alt={animal.story} src={animal.imageUrl}></img></p>
+                                        <p>{animal.gender}</p>
+                                        <p>Age: {animal.age}</p>
+                                    </Link>
+                                </li>
+                            )}
+                        </ul>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
         )
     }

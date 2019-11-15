@@ -1,4 +1,5 @@
 .adopt {
+    margin-top: 70px;
     min-height: 105vh;
     display: flex;
     flex-direction: row;
@@ -17,7 +18,7 @@
 /* PEOPLE QUEUE SECTION */
 
 .peopleQue {
-    width: 20%;
+    min-width: 375px;
     background-color: rgb(180, 180, 180);
     text-align: center;
 }
@@ -38,7 +39,7 @@
 /* ANIMAL QUEUE SECTION */
 
 .animalQue {
-    width: 80%;
+    width: 100%;
 }
 
 .animalQue h2 {
@@ -105,7 +106,7 @@
 /* ANIMAL CARD */
 
 .animalCard {
-    width: 200px;
+    min-width: 200px;
     padding: 10px;
     margin-right: 10px;
     display: flex;

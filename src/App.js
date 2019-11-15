@@ -4,14 +4,12 @@ import {Route, Router} from 'react-router-dom';
 import Home from './components/Home/Home.js'
 import Adopt from './components/Adopt/Adopt.js'
 import Help from './components/Help/Help.js'
-import NavBar from './components/NavBar/NavBar.js'
 import PetPage from './components/PetPage/PetPage'
 import history from './history'
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <Router history={history}>
         <Route exact path='/' component={Home} />
         <Route exact path='/adopt' component={Adopt} />

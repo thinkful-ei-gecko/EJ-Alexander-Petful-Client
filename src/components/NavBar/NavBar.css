@@ -3,6 +3,11 @@
     padding: 0;
     color: black;
     height: 50px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    /* background-color: darkslategray; */
 }
 
 .Navbar ul {
@@ -14,7 +19,7 @@
 }
 
 .Navbar li {
-    padding: 15px 20px 15px 20px;
+    padding: 20px 20px 15px 20px;
 }
 
 .Navbar a {
